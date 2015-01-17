@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  activityName_id: 
+  brandName_id: 
+  campaignName_id: 
+  countryName_id: 
+  employeeName_id: 
+
+two:
+  activityName_id: 
+  brandName_id: 
+  campaignName_id: 
+  countryName_id: 
+  employeeName_id: 
