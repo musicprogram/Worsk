@@ -1,28 +1,28 @@
 <p id="notice"><%= notice %></p>
 
 <p>
-  <strong>Activityname:</strong>
-  <%= @board.activityName %>
+  <strong>Activity:</strong>
+  <%= @board.activity.activityName %>
 </p>
 
 <p>
-  <strong>Brandname:</strong>
-  <%= @board.brandName %>
+  <strong>Brand:</strong>
+  <%= @board.brand.brandName %>
 </p>
 
 <p>
-  <strong>Campaignname:</strong>
-  <%= @board.campaignName %>
+  <strong>Country:</strong>
+  <%= @board.country.countryName %>
 </p>
 
 <p>
-  <strong>Countryname:</strong>
-  <%= @board.countryName %>
+  <strong>Employee:</strong>
+  <%= @board.employee.employeeName %>
 </p>
 
 <p>
-  <strong>Employeename:</strong>
-  <%= @board.employeeName %>
+  <strong>Campaign:</strong>
+  <%= @board.campaign.campaignName %>
 </p>
 
 <%= link_to 'Edit', edit_board_path(@board) %> |

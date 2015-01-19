@@ -69,6 +69,6 @@ class BoardsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def board_params
-      params.require(:board).permit(:activityName_id, :brandName_id, :campaignName_id, :countryName_id, :employeeName_id)
+      params.require(:board).permit(:activity_id, :brand_id, :country_id, :employee_id, :campaign_id)
     end
 end

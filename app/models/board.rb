@@ -1,7 +1,7 @@
 class Board < ActiveRecord::Base
-  belongs_to :activityName
-  belongs_to :brandName
-  belongs_to :campaignName
-  belongs_to :countryName
-  belongs_to :employeeName
+  belongs_to :activity
+  belongs_to :brand
+  belongs_to :country
+  belongs_to :employee
+  belongs_to :campaign
 end

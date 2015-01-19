@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150117211306) do
+ActiveRecord::Schema.define(version: 20150119141441) do
 
   create_table "activities", force: :cascade do |t|
     t.string   "activityName"
@@ -20,20 +20,20 @@ ActiveRecord::Schema.define(version: 20150117211306) do
   end
 
   create_table "boards", force: :cascade do |t|
-    t.integer  "activityName_id"
-    t.integer  "brandName_id"
-    t.integer  "campaignName_id"
-    t.integer  "countryName_id"
-    t.integer  "employeeName_id"
-    t.datetime "created_at",      null: false
-    t.datetime "updated_at",      null: false
+    t.integer  "activity_id"
+    t.integer  "brand_id"
+    t.integer  "country_id"
+    t.integer  "employee_id"
+    t.integer  "campaign_id"
+    t.datetime "created_at",  null: false
+    t.datetime "updated_at",  null: false
   end
 
-  add_index "boards", ["activityName_id"], name: "index_boards_on_activityName_id"
-  add_index "boards", ["brandName_id"], name: "index_boards_on_brandName_id"
-  add_index "boards", ["campaignName_id"], name: "index_boards_on_campaignName_id"
-  add_index "boards", ["countryName_id"], name: "index_boards_on_countryName_id"
-  add_index "boards", ["employeeName_id"], name: "index_boards_on_employeeName_id"
+  add_index "boards", ["activity_id"], name: "index_boards_on_activity_id"
+  add_index "boards", ["brand_id"], name: "index_boards_on_brand_id"
+  add_index "boards", ["campaign_id"], name: "index_boards_on_campaign_id"
+  add_index "boards", ["country_id"], name: "index_boards_on_country_id"
+  add_index "boards", ["employee_id"], name: "index_boards_on_employee_id"
 
   create_table "brands", force: :cascade do |t|
     t.string   "brandName"
