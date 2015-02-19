@@ -1,3 +1,9 @@
+
+
+<div class="col-sm-4">
+
+
+
 <i class="fa fa-user-plus fa-3x"></i>
 <br><br>
 
@@ -7,26 +13,27 @@
   <%= devise_error_messages! %>
 
   <div class="field">
-    <%= f.label :email %><br />
-    <%= f.email_field :email, autofocus: true %>
+    <br>
+    <%= f.email_field :email, autofocus: true, value: 'Email',class: 'form-control' %>
   </div>
 
   <div class="field">
-    <%= f.label :password %>
+    <br>
     <% if @validatable %>
     <em>(<%= @minimum_password_length %> characters minimum)</em>
     <% end %><br />
-    <%= f.password_field :password, autocomplete: "off" %>
+    <%= f.password_field :password, autocomplete: "off",class: 'form-control' %>
   </div>
 
   <div class="field">
-    <%= f.label :password_confirmation %><br />
-    <%= f.password_field :password_confirmation, autocomplete: "off" %>
+    <br />
+    <%= f.password_field :password_confirmation, autocomplete: "off",class: 'form-control' %>
   </div>
-
+<br>
   <div class="actions">
     <%= f.submit "Sign up" %>
   </div>
 <% end %>
 
 <%= render "devise/shared/links" %>
+</div>
