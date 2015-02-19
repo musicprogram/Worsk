@@ -44,6 +44,10 @@ group :development, :test do
 end
 
 
-gem 'devise'
-gem 'activeadmin', github:
+gem 'devise' #users
+gem 'activeadmin', github: #administrador
 'gregbell/active_admin'
+
+
+gem 'bootstrap-sass', '~> 3.3.3'
+gem "font-awesome-rails"
