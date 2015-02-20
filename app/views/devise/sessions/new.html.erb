@@ -2,7 +2,7 @@
 
   <div class="col-sm-4">
 
-   <i class="fa fa-user fa-3x"></i>
+   <i class="fa fa-user fa-3x logoentrada"></i>
    <br><br>
 
 
@@ -12,7 +12,7 @@
 
   <div class="field">
     <br />
-    <%= f.email_field :email, autofocus: true, value: 'Email', class: 'form-control centerinput' %>
+    <%= f.email_field :email, autofocus: true, class: 'form-control centerinput' %>
   </div>
 
 
@@ -40,11 +40,14 @@
   <% end -%>
 <br>
   <div class="actions">
-    <%= f.submit "Log in", class: 'btn btn-primary' %>
+    <%= f.submit "Log in", class: 'btn btn-info ' %>
   </div>
+  <br>
 <% end %>
 
-<%= render "devise/shared/links" %>
+  <%= link_to "<i class='fa fa-user-plus fa-2x'></i>".html_safe, new_registration_path(resource_name) %> |
+  <%= link_to "<i class='fa fa-user-md fa-2x'></i>".html_safe, new_password_path(resource_name) %>
+
 
 
 </div>

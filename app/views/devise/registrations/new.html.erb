@@ -4,7 +4,7 @@
 
 
 
-<i class="fa fa-user-plus fa-3x"></i>
+<i class="fa fa-user-plus fa-3x logoentrada"></i>
 <br><br>
 
 
@@ -14,7 +14,7 @@
 
   <div class="field">
     <br>
-    <%= f.email_field :email, autofocus: true, value: 'Email',class: 'form-control' %>
+    <%= f.email_field :email, autofocus: true,class: 'form-control' %>
   </div>
 
   <div class="field">
@@ -31,8 +31,9 @@
   </div>
 <br>
   <div class="actions">
-    <%= f.submit "Sign up" %>
+    <%= f.submit "Sign up", class: 'btn btn-info ' %>
   </div>
+  <br>
 <% end %>
 
 <%= render "devise/shared/links" %>

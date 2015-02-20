@@ -12,7 +12,7 @@
   <% end %>
 
 
-
+<hr>
 
 <div class="field">
      Actividad <br>
@@ -36,12 +36,14 @@
 
 <div class="field">
      Employee <br>
-    <%= f.collection_select :employee_id, Employee.all, :id, :employeeName, class: "form-control",     prompt: "Seleccione Employee" %>
+    <%= f.collection_select :employee_id, Employee.all, :id, :employeeName, class: "form-control ",     prompt: "Seleccione Employee" %>
 </div>
+<hr>
+<br>
 
 
-
-  <div class="actions">
+  <div class="actions" >
     <%= f.submit %>
   </div>
 <% end %>
+

@@ -1,4 +1,6 @@
 class Country < ActiveRecord::Base
-        has_many :board
+       validates :countryName, :presence => true
+
+       has_many :board
 
 end

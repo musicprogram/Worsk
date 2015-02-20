@@ -1,4 +1,8 @@
-<p id="notice"><%= notice %></p>
+<br>
+<div class="mostrar">
+  <br>
+  <div class="margen">
+    <p id="notice"><%= notice %></p>
 
 <p>
   <strong>Activity:</strong>
@@ -24,6 +28,13 @@
   <strong>Campaign:</strong>
   <%= @board.campaign.campaignName %>
 </p>
+<hr>
 
-<%= link_to 'Edit', edit_board_path(@board) %> |
-<%= link_to 'Back', boards_path %>
+  </div>
+  <br>
+
+</div>
+
+<br><br>
+<%= link_to "<i class='fa fa-pencil-square fa-2x'></i>".html_safe, edit_board_path(@board) %> |
+<%= link_to "<i class='fa fa-arrow-circle-left fa-2x'></i>".html_safe, boards_path %>
