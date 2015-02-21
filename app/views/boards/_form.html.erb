@@ -1,4 +1,13 @@
-<%= form_for(@board) do |f| %>
+<a class="btn btn-info" data-toggle="modal" href='#modal-id'>New</a>
+<div class="modal fade" id="modal-id">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        <h4 class="modal-title" id="letracentro">New Board</h4>
+      </div>
+      <div class="modal-body">
+        <%= form_for(@board) do |f| %>
   <% if @board.errors.any? %>
     <div id="error_explanation">
       <h2><%= pluralize(@board.errors.count, "error") %> prohibited this board from being saved:</h2>
@@ -11,8 +20,8 @@
     </div>
   <% end %>
 
-
-<hr>
+<div class="centrarcontenido">
+  
 
 <div class="field">
      Actividad <br>
@@ -38,6 +47,7 @@
      Employee <br>
     <%= f.collection_select :employee_id, Employee.all, :id, :employeeName, class: "form-control ",     prompt: "Seleccione Employee" %>
 </div>
+</div>
 <hr>
 <br>
 
@@ -47,3 +57,21 @@
   </div>
 <% end %>
 
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
+
+<script>
+  $(document).ready(function() {
+    
+     $('#modal').modal(options)
+
+    }); 
+</script>

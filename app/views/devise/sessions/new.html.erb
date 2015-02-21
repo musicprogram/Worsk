@@ -1,6 +1,24 @@
-  <link rel="stylesheet" href="../../../assets/stylesheets/centerinput.css">
 
-  <div class="col-sm-4">
+
+<div class="jumbotron">
+  <h1>User Session</h1>
+  <p>This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
+  <p><a class="btn btn-info" data-toggle="modal" href='#modal-id'>Log In</a></p>
+</div>
+
+
+
+
+
+
+<div class="modal fade" id="modal-id">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        <h4 class="modal-title">User Session</h4>
+      </div>
+      <div class="modal-body">
 
    <i class="fa fa-user fa-3x logoentrada"></i>
    <br><br>
@@ -50,4 +68,20 @@
 
 
 
-</div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
+<script>
+  $(document).ready(function() {
+    
+     $('#modal').modal(options)
+
+    }); 
+</script>
+

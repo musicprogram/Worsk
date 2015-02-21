@@ -1,6 +1,26 @@
 
 
-<div class="col-sm-4">
+<div class="jumbotron">
+  <h1>Register User</h1>
+  <p>This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
+  <p><a class="btn btn-info" data-toggle="modal" href='#modal-id'>Sign Up</a></p>
+</div>
+
+
+
+
+
+
+<div class="modal fade" id="modal-id">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        <h4 class="modal-title">Registration User</h4>
+      </div>
+      <div class="modal-body">
+
+
 
 
 
@@ -37,4 +57,21 @@
 <% end %>
 
 <%= render "devise/shared/links" %>
-</div>
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
+<script>
+  $(document).ready(function() {
+    
+     $('#modal').modal(options)
+
+    }); 
+</script>
+
