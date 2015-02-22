@@ -6790,9 +6790,48 @@ button.close {
 }
 
 .logoentrada{
-	color: #3399F3;
+	  color: #3399F3;
+	  width: 300px;
+    margin: 0 auto;
+	 
 }
 
 .letralogueo{
 	color: red;
+}
+
+.modal-header{
+  background-color: #8E8E8E;
+  background-image:
+    linear-gradient(
+      #8E8E8E, white
+    );
+ 
+  border-color: white;  
+  
+}
+
+.modal-title{
+   text-align: center;
+   color:white;
+   font-weight: 900;
+}
+
+.letrablanca{
+  text-align: center;
+   color:white;
+   font-weight: 900;
+}
+
+.jumbotron{
+    box-shadow: #555 2px 2px 3px;
+		
+		border-radius: 2px 2px 2px 3px;
+}
+
+.modal-footer{
+  
+  background: linear-gradient(to bottom left, white , #EEEEEE); /* Standard syntax */
+  border-style: solid;
+  border-color: white;
 }
