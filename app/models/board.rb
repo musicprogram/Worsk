@@ -12,5 +12,5 @@ class Board < ActiveRecord::Base
 	belongs_to :employee
 
 	belongs_to :campaign
-
+	belongs_to :user
 end
