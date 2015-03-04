@@ -45,9 +45,8 @@ end
 
 
 gem 'devise' #users
-gem 'activeadmin', github: #administrador
-'gregbell/active_admin'
 
+gem 'activeadmin', github: 'activeadmin'
 
 gem 'bootstrap-sass', '~> 3.3.3'
 gem "font-awesome-rails"

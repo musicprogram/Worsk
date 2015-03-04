@@ -8,11 +8,11 @@ ActiveAdmin.register Employee do
   #
   # or
   #
-  # permit_params do
-  #   permitted = [:permitted, :attributes]
+  permit_params do
+     permitted = [:permitted, :employeeName]
   #   permitted << :other if resource.something?
   #   permitted
-  # end
+  end
 
 
 end

@@ -1,6 +1,5 @@
 ActiveAdmin.register AdminUser do
   permit_params :email, :password, :password_confirmation
-    permit_params :boards, :activity,:brand,:country,:employee,:campaign
 
   index do
     selectable_column

@@ -1,6 +1,6 @@
 GIT
-  remote: git://github.com/gregbell/active_admin.git
-  revision: ed1fbca8c64af827616c58f274d7be256ca513b6
+  remote: git://github.com/activeadmin/activeadmin.git
+  revision: 8bd8ff07d73806e8c5dba0abeb112936de135748
   specs:
     activeadmin (1.0.0.pre)
       arbre (~> 1.0, >= 1.0.2)
@@ -66,7 +66,7 @@ GEM
     bootstrap-sass (3.3.3)
       autoprefixer-rails (>= 5.0.0.1)
       sass (>= 3.2.19)
-    bourbon (4.2.0)
+    bourbon (4.2.1)
       sass (~> 3.4)
       thor
     builder (3.2.2)
