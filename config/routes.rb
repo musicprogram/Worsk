@@ -6,8 +6,6 @@ Rails.application.routes.draw do
 
   resources :activities
 
-  resources :employees
-
   resources :countries
 
   resources :brands

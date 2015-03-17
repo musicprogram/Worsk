@@ -25,12 +25,6 @@ countries.each do |e|
 	Country.create(e) unless Country.exists?(e)
 end
 
-employees = [{employeeName: "Juanes"}]
-
-employees.each do |e|
-	Employee.create(e) unless Employee.exists?(e)
-end
-
 campaigns = [{campaignName: "Ver arder al mundo"}]
 
 campaigns.each do |e|

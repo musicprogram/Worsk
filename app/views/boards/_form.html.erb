@@ -22,6 +22,11 @@
 
 <div class="centrarcontenido">
   
+<div class="field">
+<%= f.label :timedate %><br>
+<%= f.datetime_select :timedate %>
+</div>
+
 
 <div class="field">
      Actividad <br>
@@ -43,10 +48,7 @@
     <%= f.collection_select :country_id, Country.all, :id, :countryName, class: "form-control",     prompt: "Seleccione País" %>
 </div>
 
-<div class="field">
-     Employee <br>
-    <%= f.collection_select :employee_id, Employee.all, :id, :employeeName, class: "form-control ",     prompt: "Seleccione Employee" %>
-</div>
+
 </div>
 <hr>
 <br>

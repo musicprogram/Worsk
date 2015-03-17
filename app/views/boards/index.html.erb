@@ -7,10 +7,10 @@
 <table class="table table-striped table-hover ">
   <thead>
     <tr>
+      <th>Timedate</th>
       <th>Activity</th>
       <th>Brand</th>
       <th>Country</th>
-      <th>Employee</th>
       <th>Campaign</th>
       <th>User</th>
       <th colspan="3"></th>
@@ -20,10 +20,10 @@
   <tbody>
     <% @boards.each do |board| %>
       <tr>
+        <td><%= board.timedate %></td>
         <td><%= board.activity.activityName %></td>
         <td><%= board.brand.brandName %></td>
         <td><%= board.country.countryName %></td>
-        <td><%= board.employee.employeeName %></td>
         <td><%= board.campaign.campaignName %></td>
         <td><%= board.user.email %></td>
         <td><%= link_to "<i class='fa fa-thumbs-up'></i>".html_safe, board %></td>  

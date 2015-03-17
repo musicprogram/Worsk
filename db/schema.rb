@@ -53,6 +53,7 @@ ActiveRecord::Schema.define(version: 20150304014123) do
   add_index "admin_users", ["reset_password_token"], name: "index_admin_users_on_reset_password_token", unique: true
 
   create_table "boards", force: :cascade do |t|
+    t.datetime "timedate"
     t.integer  "activity_id"
     t.integer  "brand_id"
     t.integer  "country_id"
@@ -68,6 +69,7 @@ ActiveRecord::Schema.define(version: 20150304014123) do
   add_index "boards", ["campaign_id"], name: "index_boards_on_campaign_id"
   add_index "boards", ["country_id"], name: "index_boards_on_country_id"
   add_index "boards", ["employee_id"], name: "index_boards_on_employee_id"
+  add_index "boards", ["timedate"], name: "index_boards_on_timedate"
 
   create_table "brands", force: :cascade do |t|
     t.string   "brandName"
@@ -85,12 +87,6 @@ ActiveRecord::Schema.define(version: 20150304014123) do
     t.string   "countryName"
     t.datetime "created_at",  null: false
     t.datetime "updated_at",  null: false
-  end
-
-  create_table "employees", force: :cascade do |t|
-    t.string   "employeeName"
-    t.datetime "created_at",   null: false
-    t.datetime "updated_at",   null: false
   end
 
   create_table "users", force: :cascade do |t|

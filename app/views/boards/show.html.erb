@@ -5,6 +5,11 @@
     <p id="notice"><%= notice %></p>
 
 <p>
+  <strong>Timedate:</strong>
+  <%= @board.timedate %>
+</p>
+
+<p>
   <strong>Activity:</strong>
   <%= @board.activity.activityName %>
 </p>
@@ -19,10 +24,6 @@
   <%= @board.country.countryName %>
 </p>
 
-<p>
-  <strong>Employee:</strong>
-  <%= @board.employee.employeeName %>
-</p>
 
 <p>
   <strong>Campaign:</strong>
