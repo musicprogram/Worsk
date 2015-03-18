@@ -8,11 +8,10 @@ ActiveAdmin.register Country do
   #
   # or
   #
-   permit_params do
-     permitted = [:permitted, :countryName]
+   permit_params :countryName
   #   permitted << :other if resource.something?
   #   permitted
-   end
+   
 
 
 end

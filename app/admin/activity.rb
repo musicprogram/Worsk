@@ -8,11 +8,10 @@ ActiveAdmin.register Activity do
   #
   # or
   #
-   permit_params do
-     permitted = [:permitted, :activityName]
+   permit_params :activityName
   #   permitted << :other if resource.something?
   #   permitted
-   end
+
 
 
 end

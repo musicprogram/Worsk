@@ -8,11 +8,9 @@ ActiveAdmin.register User do
   #
   # or
   #
-   permit_params do
-     permitted = [:permitted, :email]
+   permit_params :email
   #   permitted << :other if resource.something?
   #   permitted
-   end
 
 
 end

@@ -8,15 +8,6 @@ ActiveAdmin.register Board do
   #
   # or
   #
-   permit_params do
-     permitted = [:permitted, :activity]
-     permitted = [:permitted, :brand]
-     permitted = [:permitted, :country]
-     permitted = [:permitted, :employee]
-     permitted = [:permitted, :campaign]
-  #   permitted << :other if resource.something?
-  #   permitted
-   end
-
+   permit_params :activity_id, :brand_id, :country_id, :campaign_id, :timedate
 
 end

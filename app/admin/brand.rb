@@ -8,11 +8,10 @@ ActiveAdmin.register Brand do
   #
   # or
   #
-   permit_params do
-     permitted = [:permitted, :brandName]
+   permit_params :brandName
   #   permitted << :other if resource.something?
   #   permitted
-   end
+   
 
 
 end

@@ -13,7 +13,6 @@ class CreateBoards < ActiveRecord::Migration
     add_foreign_key :boards, :activities
     add_foreign_key :boards, :brands
     add_foreign_key :boards, :countries
-    add_foreign_key :boards, :employees
     add_foreign_key :boards, :campaigns
   end
 end
