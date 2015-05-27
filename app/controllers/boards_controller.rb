@@ -16,6 +16,8 @@ class BoardsController < ApplicationController
   # GET /boards/new
   def new
     @board = current_user.boards.build
+    
+   
   end
 
   # GET /boards/1/edit
@@ -25,8 +27,14 @@ class BoardsController < ApplicationController
   # POST /boards
   # POST /boards.json
   def create
+    
+    
+    
+    
     @board = current_user.boards.build(board_params)
 
+
+   
     respond_to do |format|
       if @board.save
         format.html { redirect_to @board, notice: 'Board was successfully created.' }
@@ -70,6 +78,6 @@ class BoardsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def board_params
-      params.require(:board).permit(:activity_id, :brand_id, :country_id, :campaign_id, :timedate)
+      params.require(:board).permit(:activity_id, :brand_id, :country_id, :campaign_id, :timedate, :endtime, :sumtime)
     end
 end

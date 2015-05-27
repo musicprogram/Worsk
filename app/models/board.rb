@@ -13,4 +13,21 @@ class Board < ActiveRecord::Base
 
 	belongs_to :campaign
 	belongs_to :user
+	
+	
+	before_validation :set_duracion
+
+    def set_duracion
+    	
+    	if timedate < endtime
+	        self.sumtime = timedate - endtime
+	        
+	        self.sumtime = sumtime * 1 / 60
+	        
+	        self.sumtime = sumtime * -1
+        end
+    end
+	
+	
+	
 end

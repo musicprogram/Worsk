@@ -54,10 +54,11 @@ ActiveRecord::Schema.define(version: 20150304014123) do
 
   create_table "boards", force: :cascade do |t|
     t.datetime "timedate"
+    t.datetime "endtime"
+    t.float    "sumtime"
     t.integer  "activity_id"
     t.integer  "brand_id"
     t.integer  "country_id"
-    t.integer  "employee_id"
     t.integer  "campaign_id"
     t.datetime "created_at",  null: false
     t.datetime "updated_at",  null: false
@@ -68,7 +69,8 @@ ActiveRecord::Schema.define(version: 20150304014123) do
   add_index "boards", ["brand_id"], name: "index_boards_on_brand_id"
   add_index "boards", ["campaign_id"], name: "index_boards_on_campaign_id"
   add_index "boards", ["country_id"], name: "index_boards_on_country_id"
-  add_index "boards", ["employee_id"], name: "index_boards_on_employee_id"
+  add_index "boards", ["endtime"], name: "index_boards_on_endtime"
+  add_index "boards", ["sumtime"], name: "index_boards_on_sumtime"
   add_index "boards", ["timedate"], name: "index_boards_on_timedate"
 
   create_table "brands", force: :cascade do |t|

@@ -3,7 +3,9 @@
   <br>
   <div class="margen">
     <p id="notice"><%= notice %></p>
-
+<% if @board.timedate > @board.endtime  %>
+<h1>ERROR DATE</h1>
+<%end%>
 <p>
   <strong>Timedate:</strong>
   <%= @board.timedate %>
@@ -33,6 +35,21 @@
   <strong>User:</strong>
   <%= @board.user.email %>
 </p>
+
+<p>
+  <strong>End Time:</strong>
+  <%= @board.endtime %> 
+</p>
+
+<% if @board.sumtime == nil  %>
+<h1>ERROR TIME</h1>
+<% elsif %>
+<p>
+  <strong>Time Activity:</strong>
+  <%= @board.sumtime %> Minutos
+</p>
+<% end %>
+
 <hr>
 
   </div>

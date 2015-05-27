@@ -2,6 +2,8 @@ class CreateBoards < ActiveRecord::Migration
   def change
     create_table :boards do |t|
       t.datetime   :timedate, index: true
+      t.datetime   :endtime, index: true
+      t.float   :sumtime, index: true
       t.references :activity, index: true
       t.references :brand, index: true
       t.references :country, index: true
